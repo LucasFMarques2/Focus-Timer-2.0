@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Focus Timer 2.0</title>
+
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+</head>
+
+<body>
+
+
+  <div id="time-controls">  
+    <section id="timer" class="flex">
+      <span id="minutes">25</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+    </section>
+
+    <section id="controls" class="flex">
+      <button data-action="play"><img src="/assets/play.svg" alt="imagem de play"></button>
+      <button data-action="stop"><img src="/assets/stop.svg" alt="imagem de pause"></button>
+      <button data-action="plus"><img src="/assets/+.svg" alt="imagem de mais"></button>
+      <button data-action="less"><img src="/assets/-.svg" alt="imagem de menos"></button>
+    </section>
+  </div>
+
+  <div class="sound-controls " >
+    <button class="ph ph-tree"></button>
+    <button class="ph ph-cloud-snow selected"></button>
+    <button class="ph ph-fire"></button>
+    <button class="ph ph-storefront"></button>
+  </div>
+  
+</body>
+</html>

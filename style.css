@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+  --font-color: hsl(240, 6%, 17%, 100%);
+  --bg-color: hsl(0, 0, 100, 100%);
+  --primary-bg-color: hsl(240, 9%, 89%, 100%);
+  --secundary-bg-color: hsl(194, 97%, 31%, 100%);
+  --secundary-font-color: hsl(0, 0%, 100%, 100%);
+}
+
+.flex{
+  display: flex;
+}
+
+body{
+  background: var(--bg-color);
+  display: grid;
+  grid-template-columns: 30% 25% 0% 0%;
+  grid-template-rows: auto;
+  place-content: center;
+  height: 100vh;
+} 
+
+
+#time-controls{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+#timer{
+  font-family: 'Roboto';
+  font-size: 13rem;
+  font-weight: bold;
+  text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.5);
+  
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-bg-color);
+ 
+}
+
+#controls{
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+#controls button{
+  background: none;
+}
+
+
+.sound-controls{
+  display: grid;
+  grid-template-columns: .1fr .1fr;
+  
+}
+
+.sound-controls button{
+  font-size: 6rem;
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 3rem 3rem;
+
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5); 
+  
+}
+
+.sound-controls button:hover{
+  background: #184D5D;
+  transition: .6s;
+}
+
+.selected {
+  background: var( --secundary-bg-color);
+  color: var(--secundary-font-color)
+}
+
+
+@media (max-width: 1084px) {
+  body {
+    background: var(--bg-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    place-content: center;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+}
