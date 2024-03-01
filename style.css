@@ -57,8 +57,14 @@ button{
 }
 
 #controls button{
-  background: none;
+  background-color: black;
+  color: #fff;
+  font-size: 4rem;
+  border: .2rem solid black;
+  border-radius: 50%;
+  padding: 1rem;
 }
+
 
 
 .sound-controls{
