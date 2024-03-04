@@ -1,4 +1,4 @@
-import * as FocusTimer from './FocusTimer/index.js'
+import './toggle-mode.js'
+import * as focusTimer from './FocusTimer/index.js'
 
-
-FocusTimer.start(0.2)
+focusTimer.start(1, 2)
