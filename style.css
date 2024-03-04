@@ -85,7 +85,7 @@ button{
 
 .sound-controls button:hover{
   background: #184D5D;
-  transition: .6s;
+  transition: .3s;
 }
 
 .selected {
