@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script type="module" src="/src/main.js" defer></script>
+  <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
   <title>Focus Timer 2.0</title>
 
@@ -27,7 +28,8 @@
     </section>
 
     <section id="controls" class="flex">
-      <button data-action="play" class="ph ph-play "></button>
+      <button data-action="toggleRunning" class="ph ph-play "></button>
+      <button data-action="toggleRunning" class="ph ph-pause "></button>
       <button data-action="stop" class="ph ph-stop"></button>
       <button data-action="plus" class="ph ph-plus"></button>
       <button data-action="less" class="ph ph-minus"></button>

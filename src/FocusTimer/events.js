@@ -15,9 +15,10 @@ export function registerControls() {
 
     el.soundControls.addEventListener('click', (event) =>{
       const sound = event.target.dataset.sound
-      if (sound === undefined){
+      
+      if (typeof actions[sound] != 'function'){
         return
       }
-      console.log(sound)
+      actions[sound]()
     })
 }
